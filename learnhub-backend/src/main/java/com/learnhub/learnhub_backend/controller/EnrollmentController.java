@@ -19,7 +19,10 @@ import com.learnhub.learnhub_backend.model.User;
 
 @RestController
 @RequestMapping("/api/enrollments")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://edu-vibe-two.vercel.app"
+})
 public class EnrollmentController {
 
     private final EnrollmentRepository enrollmentRepository;

@@ -18,7 +18,10 @@ import com.learnhub.learnhub_backend.model.User;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://edu-vibe-two.vercel.app"
+})
 public class UserController {
 
     private final UserRepository userRepository;
