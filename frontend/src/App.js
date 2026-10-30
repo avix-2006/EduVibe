@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-const API = 'http://localhost:8080/api';
+const API = 'https://eduvibe-14if.onrender.com/api';
 
 const courses = [
   {
